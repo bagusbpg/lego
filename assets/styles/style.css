@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Glegoo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: start;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-direction: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}
+
+aside img {
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.profile h2, h3 {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+header {
+    display: inline;
+}
+
+.tajuk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gambartajuk {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+}
+
+.isitajuk {
+    padding-inline: 5vw;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.isitajuk h1 {
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.isitajuk h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.parentcard {
+    background-color: #9BBEC8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parentcard h3 {
+    color: #00384f;
+}
+
+.childcard {
+    display: flex;
+    flex-direction: column;
+    background-color: #DDF2FD;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.childcard h4 {
+    background-color: #00384f;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.childcard p {
+    padding: 10px;
+}
+
+.gambarchildcard {
+    flex: 1;
+    align-items: stretch;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav {
+    background-color: #00384f;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 5vw;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    padding: 0.2rem 1.5rem;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li:hover a {
+    background-color: white;
+    color: #00384f;
+}
+
+nav a:hover {
+    font-weight: 800;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-weight: center;
+    background-color: #00384f;
+}
+
+@media screen and (max-width: 1000px) {
+    .isitajuk h1 {
+        font-size: 54px;
+        font-weight: 900;
+    }
+
+    .isitajuk h2 {
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .isitajuk {
+        position: static;
+        background-color: #00384f;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+
+    main aside img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .isitajuk h1 {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    .isitajuk h2 {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .isitajuk {
+        position: static;
+        background-color: #00384f;
+        text-align: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+
+    main aside img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
